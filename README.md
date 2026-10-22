@@ -49,12 +49,6 @@ CloudFront serves the React/Vite frontend from private S3 through Origin Access 
 4. Argo CD reconciles version-controlled workload and observability configuration. Image Updater is configured for the image delivery model. Backend CI publication does not directly deploy to EKS.
 5. Terraform owns AWS infrastructure and platform bootstrap. A separate CloudFront root resolves the dependency on the ALB hostname created through Kubernetes.
 
-## My contribution
-
-I contributed to the shared deployment repository as **NivBar2000**. Public history records my involvement in deployment configuration, including the Loki/Alloy logging stack. These are team-maintained repositories; I do not claim sole authorship of the system.
-
-Evidence: [my deployment commits](https://github.com/sports-store-devops-team/sports-store-deployments/commits?author=NivBar2000) and [logging-stack commit](https://github.com/sports-store-devops-team/sports-store-deployments/commit/04c328bc96e534e1649472b6c63e9874286d3b26).
-
 ## Explore and run
 
 Start with the local environment repository for sibling-repository setup and Docker Compose. Read the infrastructure and deployment runbooks before provisioning AWS resources.
